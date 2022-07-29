@@ -212,6 +212,44 @@ body {
   font-size: 9rem;
   text-shadow: 2px 2px 5px rgb(43, 43, 43);
 }
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.title-bottom button {
+  color: #fff;
+  background-color:rgba(55, 214, 185, 0.85);
+  text-shadow: 2px 2px rgb(54, 54, 54);
+  opacity: 0;
+  
+  border: none;
+  padding: 2rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  right: 32px;
+  bottom: 16px;
+  cursor: pointer;
+
+  animation: fadeInAnimation ease-in 2s;
+  animation-delay: 1150ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+button:hover {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
 .heading-box{
     padding-top: 40vh;
     height: 90rem;

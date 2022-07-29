@@ -1,8 +1,10 @@
 window.onscroll = function() {scrollFunction()};
+
 var loadTimeline = true;
 var loadCommunity = true;
 var loadLeft = true;
 var loadRight = true;
+
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("navbar").classList.add("navbar-solid");
@@ -14,6 +16,7 @@ function scrollFunction() {
   loadLeft = checkInView(loadLeft, "student", ".left", "comeLeft")
   loadRight = checkInView(loadRight, "student", ".right", "comeRight")
 }
+
 function checkInView(notInView, section, box, anime) {
   if (notInView && document.getElementById(section).getBoundingClientRect().top + 100 < document.documentElement.clientHeight) {
     document.querySelectorAll(box).forEach((el) => {
@@ -23,14 +26,17 @@ function checkInView(notInView, section, box, anime) {
   }
   return true;
 }
+
 document.querySelector(".void-logo").addEventListener("mouseover", spinny);
 document.querySelector(".void-logo").addEventListener("mouseout", stopSpinny);
+
 function spinny() {
   this.classList.add("infinite");
 }
 function stopSpinny() {
   this.classList.remove("infinite");
 }
+
 particlesJS("particles-js", {
     particles: {
       number: { value: 500, density: { enable: true, value_area: 800 } },
@@ -85,6 +91,7 @@ particlesJS("particles-js", {
     },
     retina_detect: true
   });
+  
   var update;
   update = function() {
     requestAnimationFrame(update);
