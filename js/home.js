@@ -13,15 +13,17 @@ function scrollFunction() {
   }
   loadTimeline = checkInView(loadTimeline, "timeline", ".timeline-box__side", "comeIn");
   loadCommunity = checkInView(loadCommunity, "mission", ".mission-box", "comeIn")
-  loadLeft = checkInView(loadLeft, "student", ".left", "comeLeft")
-  loadRight = checkInView(loadRight, "student", ".right", "comeRight")
+  loadLeft = checkInView(loadLeft, "about-us", ".left-animation", "comeLeft")
+  loadRight = checkInView(loadRight, "our-vision", ".right-animation", "comeRight")
 }
 
 function checkInView(notInView, section, box, anime) {
-  if (notInView && document.getElementById(section).getBoundingClientRect().top + 100 < document.documentElement.clientHeight) {
+  if(!document.getElementById(section)) return;
+  if (notInView && document.getElementById(section).getBoundingClientRect().y + 100 < document.documentElement.clientHeight) {
     document.querySelectorAll(box).forEach((el) => {
       el.classList.add(anime);
     })
+    console.log("AAAAAAAAAAAAAAAA")
     return false;
   }
   return true;
@@ -78,7 +80,7 @@ particlesJS("particles-js", {
       detect_on: "canvas",
       events: {
         onhover: { enable: true, mode: "repulse" },
-        onclick: { enable: true, mode: "repulse" },
+        onclick: { enable: false, mode: "push" },
         resize: true
       },
       modes: {

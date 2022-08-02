@@ -32,6 +32,14 @@
     opacity: 1;
   }
 }
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 .comeIn {
   animation-name: comeIn;
   animation-timing-function: ease;
@@ -52,7 +60,7 @@
 }
 body {
     color: rgb(0, 0, 0);
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: #ffffff;
     font-family: Raleway, sans-serif;
 }
@@ -213,15 +221,6 @@ body {
   text-shadow: 2px 2px 5px rgb(43, 43, 43);
 }
 
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-}
-
 .title-bottom button {
   color: #fff;
   background-color:rgba(55, 214, 185, 0.85);
@@ -252,34 +251,36 @@ button:hover {
 
 .heading-box{
     padding-top: 40vh;
-    height: 90rem;
+    height: 0;
     text-align: center;
     padding-bottom: 60vh;
 }
-  #site-name-animated.show span{
-    opacity: 1;
-    -webkit-transform: scale(1,1);
-    -moz-transform: scale(1,1);
-    -ms-transform: scale(1,1);
-    -o-transform: scale(1,1);
-    transform: scale(1,1);
-  }
-  #site-name-animated.show {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);
-    margin-bottom: 4rem;
-  }
-  #site-name-animated span {
-    transition: opacity .5s ease-out, transform .5s ease-out;
-    margin-right: 2.7rem;
-    display: inline-block;
-    opacity: 0;
-    transform: scale(1.9,1.9);
-    color: #EAE8FF;
-  }
+
+#site-name-animated.show span{
+  opacity: 1;
+  -webkit-transform: scale(1,1);
+  -moz-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  -o-transform: scale(1,1);
+  transform: scale(1,1);
+}
+#site-name-animated.show {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  margin-bottom: 4rem;
+}
+#site-name-animated span {
+  transition: opacity .5s ease-out, transform .5s ease-out;
+  margin-right: 2.7rem;
+  display: inline-block;
+  opacity: 0;
+  transform: scale(1.9,1.9);
+  color: #EAE8FF;
+}
+
 #site-name-animated.show .c5 {
   margin-right: 7.5rem;
 }
@@ -331,11 +332,13 @@ button:hover {
 
  /* ---- particles.js container ---- */
 #particles-js {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 100%;
+  left: 0;
+  z-index: -1;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-image: 
   linear-gradient(to bottom, #050303, #0C1830, #050303); 
 }
@@ -600,17 +603,66 @@ button:hover {
 }
 
 section {
-  padding: 8rem 4rem;
+  padding: 5rem 3rem;
 }
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/* section headings */
+.section-heading {
+  text-shadow: rgba(0, 0, 0, 0.25) 2px 2px 4px;
+  font-weight: 800;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.section-subheading {
+  text-shadow: rgba(255, 255, 255, 0.25) 2px 2px 4px;
+  font-weight: 200;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+/* sections */
 
 #about-us {
   background: rgb(118, 130, 153);
   color: rgb(255, 255, 255);
+  margin: 4rem;
+  border-radius: 1rem;
+  opacity: 0;
 }
 
 #about-us p {
-  font-size: 3rem;
-  margin: 3rem;
+  font-size: 2rem;
+  margin: 1rem;
+  width: 50%;
+}
+
+#our-vision {
+  background: rgb(118, 130, 153);
+  color: rgb(255, 255, 255);
+  margin: 4rem;
+  border-radius: 1rem;
+  opacity: 0;
+}
+
+#our-vision p {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: right;
 }
 
 /* application steps */
@@ -713,32 +765,20 @@ section {
   color: #586682;
 }
 
-/* section headings */
-.section-heading {
-  text-shadow: rgba(0, 0, 0, 0.25) 2px 2px 4px;
-  font-weight: 400;
-  font-size: 6rem;
-  text-transform: uppercase;
-  margin-bottom: 6rem;
-}
-
-
-
-
 /* footer */
 #footer {
-  padding: 4rem;
-  height: 12rem;
+  padding: 2.5rem;
+  height: 7rem;
   color: #BFC3CD;
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0 auto;
   background-color: #0C1830;
 }
 #footer a {
-  font-weight: 700;
+  font-weight: 400;
 }
 #footer i {
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0 1rem;
 }
 .footer-box {
