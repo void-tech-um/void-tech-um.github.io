@@ -23,7 +23,6 @@ function checkInView(notInView, section, box, anime) {
     document.querySelectorAll(box).forEach((el) => {
       el.classList.add(anime);
     })
-    console.log("AAAAAAAAAAAAAAAA")
     return false;
   }
   return true;
