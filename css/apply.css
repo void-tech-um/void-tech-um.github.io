@@ -245,9 +245,9 @@ body {
 
 .heading-box {
     padding-top: 15vh;
-    height: 90rem;
+    height: 0;
     text-align: center;
-    padding-bottom: 60vh;
+    padding-bottom: 10vh;
 }
 
 #site-name-animated.show span {
