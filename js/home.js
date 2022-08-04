@@ -1,24 +1,22 @@
 window.onscroll = function() {scrollFunction()};
-var loadTimeline = true;
-var loadCommunity = true;
-var loadLeft = true;
-var loadRight = true;
+var loadImage = true;
+
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("navbar").classList.add("navbar-solid");
   } else {
     document.getElementById("navbar").classList.remove("navbar-solid");
   }
-  loadTimeline = checkInView(loadTimeline, "timeline", ".timeline-box__side", "comeIn");
-  loadCommunity = checkInView(loadCommunity, "mission", ".mission-box", "comeIn")
-  loadLeft = checkInView(loadLeft, "student", ".left", "comeLeft")
-  loadRight = checkInView(loadRight, "student", ".right", "comeRight")
+  loadImage = checkInView(loadImage, "eboard-row-1", "eboard-member", "comeIn");
+  loadImage = checkInView(loadImage, "eboard-row-2", "eboard-member", "comeIn");
 }
 function checkInView(notInView, section, box, anime) {
+  if(!document.getElementById(section)) return;
   if (notInView && document.getElementById(section).getBoundingClientRect().top + 100 < document.documentElement.clientHeight) {
     document.querySelectorAll(box).forEach((el) => {
       el.classList.add(anime);
     })
+    console.log("AAAAAA");
     return false;
   }
   return true;
