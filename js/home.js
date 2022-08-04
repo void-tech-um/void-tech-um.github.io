@@ -11,8 +11,6 @@ function scrollFunction() {
   } else {
     document.getElementById("navbar").classList.remove("navbar-solid");
   }
-  loadTimeline = checkInView(loadTimeline, "timeline", ".timeline-box__side", "comeIn");
-  loadCommunity = checkInView(loadCommunity, "mission", ".mission-box", "comeIn")
   loadLeft = checkInView(loadLeft, "about-us", ".left-animation", "comeLeft")
   loadRight = checkInView(loadRight, "our-vision", ".right-animation", "comeRight")
 }
