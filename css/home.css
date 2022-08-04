@@ -43,19 +43,19 @@
 .comeIn {
   animation-name: comeIn;
   animation-timing-function: ease;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 .comeLeft {
   animation-name: comeLeft;
   animation-timing-function: ease;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 .comeRight {
   animation-name: comeRight;
   animation-timing-function: ease;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -243,8 +243,8 @@ body {
   bottom: 16px;
   cursor: pointer;
 
-  animation: fadeInAnimation ease-in 2s;
-  animation-delay: 1150ms;
+  animation: fadeInAnimation ease-in 1s;
+  animation-delay: 900ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -383,11 +383,11 @@ section {
 
 /* sections */
 
-#about-us {
-  background: rgb(118, 130, 153);
+.info-section {
+  background: rgb(118, 130, 153, 0.85);
   color: rgb(255, 255, 255);
   margin: 4rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   opacity: 0;
 }
 
@@ -397,19 +397,16 @@ section {
   width: 50%;
 }
 
-#our-vision {
-  background: rgb(118, 130, 153);
-  color: rgb(255, 255, 255);
-  margin: 4rem;
-  border-radius: 1rem;
-  opacity: 0;
-}
-
 #our-vision p {
   font-size: 2rem;
   margin: 1rem;
   text-align: right;
   width: 50%;
+  display: inline-block;
+}
+
+.float-right {
+  float: right;
 }
 
 /* footer */
