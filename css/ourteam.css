@@ -239,15 +239,15 @@ body {
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 9rem;
     text-shadow: 2px 2px 5px rgb(43, 43, 43);
 }
 
 .heading-box {
     padding-top: 15vh;
-    height: 0;
+    height: 20rem;
     text-align: center;
-    padding-bottom: 10vh;
+    padding-bottom: 0vh;
 }
 
 #site-name-animated {
@@ -332,7 +332,47 @@ body {
 .bigbottom {
     margin-bottom: 1000px;
 }
+.linkedin-text{
+    text-decoration: underline;
+    color:#37D6B9;
+}
+.eboard-pictures {
+    display: flex;
+    flex-direction: column;
+}
 
+.member-description{
+    color: white;
+}
+
+.eboard-row1{
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.eboard-row2 {
+    padding-bottom: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px) {
+    .eboard-row1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .eboard-row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .eboard-member {
+        margin-bottom: 5rem;
+    }
+}
 /* ---- particles.js container ---- */
 #particles-js {
     position: fixed;
@@ -611,7 +651,6 @@ body {
 .timeline-box-picture {
     width: 100%;
     height: 100%;
-    border-radius: 2rem;
     position: absolute;
 }
 
@@ -620,10 +659,6 @@ body {
     bottom: 0;
     right: 0;
     width: 60%;
-}
-
-.timeline-box{
-    border-radius: 2rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -717,7 +752,6 @@ section {
 }
 
 .events-text div {
-    color: white;
     padding: 0.2rem 0;
 }
 
@@ -726,13 +760,12 @@ section {
     font-size: 2.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: white;
+    color: #586682;
 }
 
 .events-title {
     margin-top: 1rem;
     font-weight: 600;
-    font-size: 2.2rem;
 }
 
 .events-description {
@@ -751,20 +784,16 @@ section {
 }
 
 .application-link {
-    color: #37D6B9;
+    color: #586682;
 }
 
 /* section headings */
 .section-heading {
-    color: white;
     text-shadow: rgba(0, 0, 0, 0.25) 2px 2px 4px;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 6rem;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 6rem;
-    padding: 1.8rem;
-    padding-bottom: 4rem;
 }
 
 
