@@ -7,16 +7,14 @@ function scrollFunction() {
   } else {
     document.getElementById("navbar").classList.remove("navbar-solid");
   }
-  loadImage = checkInView(loadImage, "eboard-row-1", "eboard-member", "comeIn");
-  loadImage = checkInView(loadImage, "eboard-row-2", "eboard-member", "comeIn");
+  loadImage = checkInView(loadImage, "eboard-row-2", ".eboard-member-2", "comeIn");
 }
 function checkInView(notInView, section, box, anime) {
   if(!document.getElementById(section)) return;
   if (notInView && document.getElementById(section).getBoundingClientRect().top + 100 < document.documentElement.clientHeight) {
-    document.querySelectorAll(box).forEach((el) => {
+    document.querySelectorAll(`#${section} ${box}`).forEach((el) => {
       el.classList.add(anime);
     })
-    console.log("AAAAAA");
     return false;
   }
   return true;
