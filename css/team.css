@@ -78,11 +78,11 @@ body {
 
 img {
     width: 250px;
-    animation-name: floating;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-bottom: 20px;
+    transition: all .2s ease-in-out;
+}
+
+img:hover {
+    transform: translateY(-20px);
 }
 
 .white {
@@ -363,14 +363,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    opacity: 0;
-
-    animation-name: comeIn;
-    animation-delay: 800ms;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    opacity: 0.85;
 }
 
 #eboard-row-2 {
