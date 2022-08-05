@@ -12,7 +12,7 @@ function scrollFunction() {
     document.getElementById("navbar").classList.remove("navbar-solid");
   }
   loadLeft = checkInView(loadLeft, "about-us", ".left-animation", "comeLeft")
-  loadRight = checkInView(loadRight, "our-vision", ".right-animation", "comeRight")
+  loadRight = checkInView(loadRight, "our-mission", ".right-animation", "comeRight")
 }
 
 function checkInView(notInView, section, box, anime) {
