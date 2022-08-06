@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
     <link href="https://fonts.googleapis.com/css?family=Forum|Lato:400,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div id="particles-js"></div>
     <nav id="navbar" class="navbar">
         <div class="site-max-width">
             <div class="flexy nav-flex">
@@ -53,13 +55,11 @@
                     <li class="nav-link">
                         <a href="/html/team.html">Our Team</a>
                     </li>
-                    <li class="nav-link">
-                        <a href="/html/contact.html">Contact</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div id="particles-js"></div>
     <div class="heading-box">
         <div class="zoomInDown">
             <div class="title">
@@ -73,156 +73,46 @@
                     <span class="c9" style="transition-delay: 400ms;">C</span>
                     <span class="c10" style="transition-delay: 533.333ms;">H</span>
                     <div class="title-bottom">
+                        
                     </div>
                 </div>
             </div>
-            <!-- TODO: add this back if we can come up with something better -->
-            <!-- <div class="header-desc">
-                All of your technical needs met for the low price of free
-            </div> -->
+            <div class="header-desc">
+                Innovate. Create. Realize.
+            </div>
+            <button class="home-button">
+                <a href="/html/apply.html">
+                    GET INVOLVED
+                </a>
+            </button>
         </div>
     </div>
-    <section id="about-us">
-        <div class="site-max-width">
+    <section id="about-us" class="info-section left-animation">
+        <div class="site-max-width left">
             <h2 class="section-heading">About Us</h2>
-            <p>Founded in 2019, VOID Tech Consulting is the first student organization at the University of Michigan
-                focused on technical client projects. Each year, new members learn web devlopment skills and get the
-                opportunity to work with a project team, creating or improving a site for a real client. We partner with
-                local businesses and non-profits to create valuable experiences for our members and amazing websites for
-                our clients.</p>
+            <h3 class="section-subheading">What we do</h3>
+            <div style="text-align: center;">Founded in 2019, VOID Tech gives members real-world software development experience 
+            through real-world projects. We bring together student developers, designers, and product 
+            managers to partner up in order to create beautiful, functional web apps and applications.</div>
         </div>
     </section>
-    <section id="student-roles">
-        <div class="site-max-width">
-            <h2 class="section-heading">Get Involved</h2>
-            <div class="timeline-boxes">
-                <div class="timeline-box">
-                    <div class="timeline-box-top timeline-fill-width">
-                        <img class="timeline-box-picture" src="/images/PM_image.png">
-                        <span class="timeline-box-heading timeline-box-position">
-                            <h4 class="timeline-box-heading-text">Product</h4>
-                        </span>
-                    </div>
-                    <div class="timeline-box-bottom">
-                        <p>Product Managers spearhead our client interactions and content strategy. In this
-                            cross-functional role, students develop their communication skills working with clients,
-                            designers and developers to ensure the final product meets all of our client's needs.
-                        </p>
-                        <button href="#apply">Apply</button>
-                    </div>
-                </div>
-                <div class="timeline-box">
-                    <div class="timeline-box-top timeline-fill-width">
-                        <img class="timeline-box-picture" src="/images/code_image.png">
-                        <span class="timeline-box-heading timeline-box-position">
-                            <h4 class="timeline-box-heading-text">Development</h4>
-                        </span>
-                    </div>
-                    <div class="timeline-box-bottom">
-                        <p>In the fall semester, developers have the opportunity to learn web development skills and
-                            build a personal website. In the winter semester, these developers are paired with a team
-                            and put their skills to work on a client project.</p>
-                        <button href="#apply">Apply</button>
-                    </div>
-                </div>
-                <div class="timeline-box">
-                    <div class="timeline-box-top timeline-fill-width">
-                        <img class="timeline-box-picture" src="/images/design_image.png">
-                        <span class="timeline-box-heading timeline-box-position">
-                            <h4 class="timeline-box-heading-text">Design</h4>
-                        </span>
-                    </div>
-                    <div class="timeline-box-bottom">
-                        <p>Designers get the chance to build their portfolio working with a small team and a real
-                            client. New designers also attend workshops to learn instustry skills and receive regular feedback on their work from experienced student designers. </p>
-                        <button href="#apply">Apply</button>
-                    </div>
-                </div>
-            </div>
+    <section id="our-mission" class="info-section float-right right-animation">
+        <div class="site-max-width right">
+            <h2 class="section-heading">Our mission</h2>
+            <h3 class="section-subheading">How we do it<h3>
+            <div style="text-align: center;">To set up students for success by creating cross-functional teams that will allow them 
+                to explore their design, development, and management capabilities, while learning about the 
+                process of developing a functional application that solves a real-world problem. Students 
+                will have to undergo a development process that ranges from brainstorming, to development, 
+                then testing and finally, deployment. We also host multiple social and professional development 
+                events throughout the year that will allow you to make lifelong friends and connections!</div>
+            <!--img class="mission-img" src="/images/collab.jpg" alt="..."-->
         </div>
-    </section>
-    <section id="apply">
-        <div class="site-max-width">
-            <h2 class="section-heading">Application Timeline</h2>
-            <div class="events-section">
-                <div class="events-box">
-                    <div class="events-header">
-                        <div class="events-bullet">
-                        </div>
-                        <div class="events-line"> </div>
-                    </div>
-                    <div class="events-date"> Festifall </div>
-                    <div class="events-text">
-                        <div class="events-title"> September 3rd </div>
-                        <div class="events-description"> 5-8pm EST</div>
-                        <div class="events-description"> Central Campus Diag </div>
-                        <div class="events-location application-link">
-                            <a href="https://forms.gle/dkj8gcGueXSN834z7">Join our email list</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="events-box">
-                    <div class="events-header">
-                        <div class="events-bullet">
-                        </div>
-                        <div class="events-line"> </div>
-                    </div>
-                    <div class="events-date"> Mass Meetings </div>
-                    <div class="events-text">
-                        <div class="events-title"> September 7th </div>
-                        <div class="events-description"> Wednesday, 6-7pm EST</div>
-                        <div class="events-location"> TBD </div>
-                    </div>
-                    <div class="events-text">
-                        <div class="events-title"> September 8th </div>
-                        <div class="events-description"> Thursday, 6-7pm EST</div>
-                        <div class="events-location"> TBD </div>
-                    </div>
-                </div>
-                <div class="events-box">
-                    <div class="events-header">
-                        <div class="events-bullet">
-                        </div>
-                        <div class="events-line"> </div>
-                    </div>
-                    <div class="events-date"> Apply </div>
-                    <div class="events-text">
-                        <div class="events-title"> September 13th </div>
-                        <div class="events-description"> Monday, 12am EST</div>
-                        <div class="events-description">Application links coming soon!</div>
-                        <!-- <div class="events-location application-link"> <a href="https://www.google.com/"> Designer
-                                Application Link </a>
-                        </div>
-                        <div class="events-location application-link"> <a href="https://www.google.com/"> Product
-                                Manager Application
-                                Link </a> </div>
-                        <div class="events-location application-link"> <a href="https://www.google.com/"> Development
-                                Lead Application
-                                Link </a>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="events-box">
-                    <div class="events-header">
-                        <div class="events-bullet">
-                        </div>
-                        <div class="events-line"> </div>
-                    </div>
-                    <div class="events-date"> Developer Curriculum </div>
-                    <div class="events-text">
-                        <div class="events-title"> September 14th </div>
-                        <div class="events-description"> Tuesday, 6-7pm EST</div>
-                        <div class="events-location"> TBD </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
     <footer id="footer" class="flexy">
         <div>
             <a href="mailto:voidtechconsulting@gmail.com">voidtechconsulting@gmail.com</a>
-            <p>Design and Development by VOID Tech Consulting</p>
+            <p>Design and Development by VOID Tech</p>
         </div>
         <div>
             <a href="https://www.instagram.com/voidtechconsulting/"><i class="fab fa-instagram"></i></a>
@@ -238,7 +128,7 @@
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="/js/navbar.js"></script>
-    <script src="/js/common.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 
 </html>
