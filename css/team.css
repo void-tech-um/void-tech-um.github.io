@@ -369,14 +369,15 @@ img {
 
 .member-description{
     color: white;
+    font-size: 2rem;
 }
 
-@media screen and (max-width: 700px) {
-    #eboard-row1 {
+@media screen and (max-width: 900px) {
+    #eboard-row-1 {
         flex-direction: column;
         align-items: center;
     }
-    #eboard-row2 {
+    #eboard-row-2 {
         flex-direction: column;
         align-items: center;
     }
