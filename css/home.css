@@ -146,6 +146,10 @@
   animation-duration: 2s;
 }
 
+.home-button:hover {
+  background-color: rgb(118, 130, 153);
+}
+
 /*button:hover {
   transform: translateY(-6px);
   transition:
