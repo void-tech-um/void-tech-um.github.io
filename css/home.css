@@ -335,12 +335,12 @@ body {
  /* ---- particles.js container ---- */
 #particles-js {
   position: fixed;
-  top: 0;
   width: 100%;
   height: 100%;
   left: 0;
   z-index: -1;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-image: 
   linear-gradient(to bottom, #050303, #0C1830, #050303); 
 }

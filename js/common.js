@@ -1,39 +1,11 @@
-window.onscroll = function() {scrollFunction()};
-
-var loadLeft = true;
-var loadRight = true;
-
-function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    document.getElementById("navbar").classList.add("navbar-solid");
-  } else {
-    document.getElementById("navbar").classList.remove("navbar-solid");
-  }
-  loadLeft = checkInView(loadLeft, "about-us", ".left-animation", "comeIn")
-  loadRight = checkInView(loadRight, "our-mission", ".right-animation", "comeIn")
-}
-
-function checkInView(notInView, section, box, anime) {
-  if(!document.getElementById(section)) return;
-  if (notInView && document.getElementById(section).getBoundingClientRect().y + 100 < document.documentElement.clientHeight) {
-    document.querySelectorAll(box).forEach((el) => {
-      el.classList.add(anime);
-    })
-    return false;
-  }
-  return true;
-}
-
 document.querySelector(".void-logo").addEventListener("mouseover", spinny);
 document.querySelector(".void-logo").addEventListener("mouseout", stopSpinny);
-
 function spinny() {
   this.classList.add("infinite");
 }
 function stopSpinny() {
   this.classList.remove("infinite");
 }
-
 particlesJS("particles-js", {
     particles: {
       number: { value: 500, density: { enable: true, value_area: 800 } },
@@ -75,7 +47,7 @@ particlesJS("particles-js", {
       detect_on: "canvas",
       events: {
         onhover: { enable: true, mode: "repulse" },
-        onclick: { enable: false, mode: "push" },
+        onclick: { enable: true, mode: "repulse" },
         resize: true
       },
       modes: {
@@ -88,7 +60,6 @@ particlesJS("particles-js", {
     },
     retina_detect: true
   });
-  
   var update;
   update = function() {
     requestAnimationFrame(update);
