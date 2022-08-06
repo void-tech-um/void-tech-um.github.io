@@ -389,17 +389,16 @@ section {
   opacity: 0;
 }
 
-#about-us p {
+#about-us div {
   font-size: 2rem;
   margin: 1rem;
-  width: 50%;
+  text-align: center;
 }
 
-#our-mission p {
+#our-mission div {
   font-size: 2rem;
   margin: 1rem;
-  width: 60%;
-  display: inline-block;
+  text-align: center;
 }
 
 .mission-img {
