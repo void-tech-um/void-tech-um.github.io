@@ -60,13 +60,6 @@
     animation-fill-mode: forwards;
 }
 
-body {
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
-    background-color: #ffffff;
-    font-family: Raleway, sans-serif;
-}
-
 .white {
     background-color: white !important;
 }
@@ -533,7 +526,7 @@ section {
     font-size: 30px;
     /* or 79px */
     letter-spacing: 0.3em;
-    color: #37D6B9;
+    color: #ffffff;
     /* Inside auto layout */
     flex: none;
     order: 0;
