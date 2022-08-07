@@ -75,37 +75,6 @@
   margin: auto;
 }
 
-/* site brand logo */
-.void-logo:hover{
-  fill: white;
-}
-.site-brand {
-  color: white;
-  font-size: 3.6rem;
-}
-.logo-box {
-  margin-left: 1rem;
-  color: white;
-  display: flex;
-  width: 13rem;
-  align-items: center;
-  justify-content: space-between;
-}
-.void-logo {
-  height: 3.5rem;
-  width: 3.5rem;
-  fill: #37D6B9;
-  animation-name: spin;
-  animation-duration: 500ms;
-  animation-iteration-count: 2;
-  animation-timing-function: linear; 
-  cursor: pointer;
-}
-.infinite {
-  transform:rotate(360deg);
-  transition: 500ms;
-}
-
 #myCanvas {
     position: absolute;
     width: 100% !important;
