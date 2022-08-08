@@ -69,13 +69,6 @@
     animation-fill-mode: forwards;
 }
 
-body {
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
-    background-color: #ffffff;
-    font-family: Raleway, sans-serif;
-}
-
 img {
     width: 250px;
 }

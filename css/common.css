@@ -7,6 +7,59 @@ body {
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>") 16 0,auto;
 }
 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.05); }
+
+.button {
+    color: #fff;
+    background-color:rgba(55, 214, 185, 0.85);
+    
+    border: none;
+    padding: 1rem;
+    width: 75px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 1px 3px #0000006e;
+}
+
+.button:hover {
+    background-color: rgb(118, 130, 153);;
+}
+
+/* site brand logo */
+.void-logo:hover{
+    fill: white;
+  }
+  .site-brand {
+    color: white;
+    font-size: 3.6rem;
+  }
+  .logo-box {
+    margin-left: 1rem;
+    color: white;
+    display: flex;
+    width: 13rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .void-logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    fill: #37D6B9;
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: 2;
+    animation-timing-function: linear; 
+    cursor: pointer;
+  }
+  .infinite {
+    transform:rotate(360deg);
+    transition: 500ms;
+  }
+
 /* navbar */
 .navbar {
     border-bottom: 1px solid white;
@@ -27,7 +80,7 @@ body {
     justify-content: space-between;
   }
   .nav-links {
-    width: 35rem;
+    width: 42rem;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
