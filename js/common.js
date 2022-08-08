@@ -60,18 +60,19 @@ particlesJS("particles-js", {
     },
     retina_detect: true
   });
-  var update;
-  update = function() {
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-  document.querySelector('#site-name-animated').classList.add("show");
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+var update;
+update = function() {
+  requestAnimationFrame(update);
+};
+requestAnimationFrame(update);
+document.querySelector('#site-name-animated').classList.add("show");
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
 });
