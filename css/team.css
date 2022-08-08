@@ -243,6 +243,10 @@ img {
     justify-content: space-evenly;
 }
 
+.eboard-image{
+    border-radius: 3rem;
+}
+
 .member-description{
     color: white;
     font-size: 2rem;
