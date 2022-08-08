@@ -1,7 +1,3 @@
-# VOID
-Dual Software Consulting
-
-## Intro Topics
-
-1. Github
+# VOID Tech
+Technology organization at the University of Michigan.
 
