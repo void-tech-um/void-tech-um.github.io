@@ -1,3 +1,3 @@
 # VOID Tech
-Technology organization at the University of Michigan.
+Website repository for VOID Tech at the University of Michigan.
 
