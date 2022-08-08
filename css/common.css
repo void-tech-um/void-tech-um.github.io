@@ -1,11 +1,15 @@
+:root {
+  --rocket-cursor:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>") 16 0,auto;
+}
+
 body {
     color: rgb(0, 0, 0);
     font-size: 1.8rem;
     background-color: #0C1830;
     font-family: Raleway, sans-serif;
-    cursor: 
-      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>") 16 0,auto;
-}
+    cursor: var(--rocket-cursor)
+}      
 
  /* ---- particles.js container ---- */
  #particles-js {
@@ -38,8 +42,17 @@ body {
     text-shadow: 1px 1px 3px #0000006e;
 }
 
-.button:hover {
-    background-color: rgb(118, 130, 153);;
+button:hover:enabled{
+  background-color: rgb(118, 130, 153);
+}
+
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+  box-shadow: rgba(0, 0, 0, 0);
+  text-shadow: rgba(0, 0, 0, 0);
+  cursor: var(--rocket-cursor);
 }
 
 /* site brand logo */
