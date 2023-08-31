@@ -383,3 +383,10 @@ section {
 .application-link {
   color: #37d6b9;
 }
+
+.temporary-text {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
