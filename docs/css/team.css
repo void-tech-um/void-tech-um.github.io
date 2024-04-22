@@ -223,6 +223,18 @@ img {
     color:#37D6B9;
 }
 
+.group-photo {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+
+.group-image {
+    width: 75%;
+    border-radius: 3rem;
+}
+
 .eboard-pictures {
     display: flex;
     flex-direction: column;
