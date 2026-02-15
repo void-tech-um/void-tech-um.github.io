@@ -1,7 +1,11 @@
+/*THE ROCKET CURSOR
 :root {
   --rocket-cursor:
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>") 16 0,auto;
 }
+    */
+
+  
 
 body {
     color: rgb(0, 0, 0);
@@ -28,7 +32,7 @@ body {
 .grow:hover { transform: scale(1.05); }
 
 .button {
-    color: #fff;
+    color: black;
     background-color:rgba(55, 214, 185, 0.85);
     
     border: none;
@@ -52,29 +56,34 @@ button[disabled]{
   color: #666666;
   box-shadow: rgba(0, 0, 0, 0);
   text-shadow: rgba(0, 0, 0, 0);
-  cursor: var(--rocket-cursor);
+  /* cursor: var(--rocket-cursor); */
 }
+
+/* Nav bar sub ==> inter */
 
 /* site brand logo */
 .void-logo:hover{
     fill: white;
   }
-  .site-brand {
+  .site-brand { /* main logo */
     color: white;
     font-size: 3.6rem;
+    width: 3 rem;
+    white-space: nowrap; /*put the "void tech" logo into 1 line*/
+    
   }
   .logo-box {
     margin-left: 1rem;
     color: white;
     display: flex;
-    width: 13rem;
+    width: 20rem;
     align-items: center;
     justify-content: space-between;
   }
   .void-logo {
     height: 3.5rem;
     width: 3.5rem;
-    fill: #37D6B9;
+    fill: #0e100f;
     animation-name: spin;
     animation-duration: 500ms;
     animation-iteration-count: 2;
@@ -88,29 +97,31 @@ button[disabled]{
 
 /* navbar */
 .navbar {
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     position: fixed;
     display: block;
     width: 100%;
-    padding-top: .75rem;
+    padding-top: 2rem;
     padding-bottom: 1.25rem;
+    
+    padding-right: 2.5rem;
     z-index: 2;
     background-image: linear-gradient(to bottom, #141212, #00000041);
   }
   .navbar-solid {
     background-image: unset;
-    background-color: #0C1830;
+    background-color: rgba(0,0,0,0.8);
   }
   .flexy {
     display: flex;
     justify-content: space-between;
   }
   .nav-links {
-    width: 42rem;
+    width: 60rem;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    color: #FFFFFF;
+    color: rgba(153, 153, 153);
   }
   .nav-links .active {
     color: #37D6B9;

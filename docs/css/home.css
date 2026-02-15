@@ -204,9 +204,10 @@ section {
   padding: 5rem 3rem;
 }
 
+/* CHANGE THE HEADINGS IN HOME PAGE (e.g. about us, our mission,...) */
 /* section headings */
 .section-heading {
-  font-family: "Jost";
+  font-family: "arial";
   font-style: normal;
   font-weight: 900;
   font-size: 45px;
