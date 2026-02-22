@@ -70,14 +70,14 @@ button[disabled]{
     width: 3 rem;
     white-space: nowrap; /*put the "void tech" logo into 1 line*/
     
+    
   }
   .logo-box {
-    margin-left: 1rem;
-    color: white;
-    display: flex;
-    width: 20rem;
+    display: flex; 
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
+    color: white;
+  
   }
   .void-logo {
     height: 3.5rem;

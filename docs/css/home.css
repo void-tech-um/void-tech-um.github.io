@@ -122,10 +122,28 @@
     cubic-bezier(.3, .7, .4, 1.5);
 }*/
 
+
 .header-desc {
+
   color: white;
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
+  text-shadow: 2px 2px 5px rgb(43, 43, 43);
+  opacity: 0;
+  white-space: nowrap;
+
+  transform: translateY(2rem);
+  animation-name: moveUp;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 2s;
+}
+.header-about {
+  color: white;
+  font-size: 2rem;
+  width: 70rem;   
+  text-align: left;
   text-shadow: 2px 2px 5px rgb(43, 43, 43);
   opacity: 0;
 
@@ -141,9 +159,22 @@
 .heading-box {
   padding-top: 40vh;
   height: 0;
-  text-align: center;
+  padding-left: 10vh;
   padding-bottom: 60vh;
 }
+
+#site-name-animated {
+  font-size: clamp(4rem, 8vw, 6rem);
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  color: white;
+}
+
+#site-name-animated h1 {
+  color: #50CDF7;
+}
+
 #site-name-animated.show span {
   opacity: 1;
   -webkit-transform: scale(1, 1);
