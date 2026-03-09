@@ -253,10 +253,11 @@ section {
 }
 
 .section-subheading {
-  text-shadow: rgba(255, 255, 255, 0.25) 2px 2px 4px;
-  font-weight: 200;
-  font-size: 2rem;
-  text-transform: uppercase;
+  /* text-shadow: rgba(255, 255, 255, 0.25) 2px 2px 4px; */
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-size: 36px;
+  /* text-transform: uppercase; */
   margin-bottom: 3rem;
   text-align: center;
 }

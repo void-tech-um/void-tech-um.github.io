@@ -74,7 +74,7 @@
 }
 
 .logo-box {
-  margin-left: 1rem;
+
   color: white;
   display: flex;
   width: 13rem;
@@ -228,6 +228,7 @@
   right: 32px;
   bottom: 16px;
 }
+
 
 .timeline-box {
   width: 40rem;

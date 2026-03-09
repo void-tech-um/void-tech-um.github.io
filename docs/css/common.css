@@ -37,9 +37,9 @@ body {
     background-color: #50CDF7;
     border: none;
     padding: 1rem;
-    width: 75px;
+    width: 100px;
     border-radius: 5px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     cursor: pointer;
     display: inline-block;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.25);
