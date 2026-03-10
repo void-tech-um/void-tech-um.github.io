@@ -116,6 +116,7 @@ button[disabled]{
     justify-content: space-between;
   }
   .nav-links {
+    font-family: 'Space Grotesk';
     width: 60rem;
     justify-content: space-around;
     align-items: center;
