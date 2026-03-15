@@ -49,21 +49,31 @@
   /* margin:1239rem; */
   justify-content: space-around;
   gap: 1.5rem;
+  
 }
+
 .box{
-  flex:1;
-  width:21.6rem;
-  height: 20rem;
+
+  flex: 1 1 21.6rem;
+  min-width: 0; 
+  min-height: 20rem;
+  height: auto;
   padding:3.5rem;
+  box-sizing: border-box;
   /* padding: 0.5rem; CHANGE THE PADDING OF THE BOXES */
   background-color: rgba(24, 27, 37, 0.4);
   border: 1px solid rgba(37, 40, 55, 0.5);
   border-radius: 1rem;
   font-family: 'Space Grotesk';
   font-style: bold;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 700;
   /* flex-direction: column; */
+}
+
+.box-title {
+  font-size: 16px;
+  padding-bottom: 5px;
 }
 .sub-box{
   font-size:14px;
@@ -113,6 +123,7 @@
 .title {
   font-size: 9rem;
   text-shadow: 2px 2px 5px rgb(43, 43, 43);
+  font-family: 'Space Grotesk';
 }
 
 .home-button {
@@ -161,6 +172,7 @@
   text-shadow: 2px 2px 5px rgb(43, 43, 43);
   opacity: 0;
   white-space: nowrap;
+  font-family: 'Space Grotesk';
 
   transform: translateY(2rem);
   animation-name: moveUp;
@@ -187,10 +199,16 @@
 
 /* site name header */
 .heading-box {
-  padding-top: 40vh;
-  height: 0;
-  padding-left: 10vh;
-  padding-bottom: 60vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.hero-content {
+  max-width: 70rem;
+  margin-left: 4.5rem;
 }
 
 #site-name-animated {
@@ -268,7 +286,7 @@ section {
 /* CHANGE THE HEADINGS IN HOME PAGE (e.g. about us, our mission,...) */
 /* section headings */
 .section-heading {
-  font-family: "arial";
+  font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 900;
   font-size: 45px;
