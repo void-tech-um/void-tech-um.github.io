@@ -53,13 +53,16 @@
 }
 
 .box{
-
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 1rem; 
   flex: 1 1 21.6rem;
   min-width: 0; 
   min-height: 20rem;
   height: auto;
-  padding:3.5rem;
   box-sizing: border-box;
+  padding: 3rem;
   /* padding: 0.5rem; CHANGE THE PADDING OF THE BOXES */
   background-color: rgba(24, 27, 37, 0.4);
   border: 1px solid rgba(37, 40, 55, 0.5);
@@ -70,9 +73,16 @@
   font-weight: 700;
   /* flex-direction: column; */
 }
+.sub-box-icon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  padding-bottom: 3rem;
+}
 
 .box-title {
   font-size: 16px;
+  text-align: left;
   padding-bottom: 5px;
 }
 .sub-box{
