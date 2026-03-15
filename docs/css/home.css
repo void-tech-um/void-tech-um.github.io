@@ -292,7 +292,7 @@ section {
   font-size: 45px;
   /* or 79px */
   letter-spacing: 0.1em;
-  color: #37d6b9;
+  color: #50CDF7;
   /* Inside auto layout */
   flex: none;
   order: 0;
@@ -337,4 +337,76 @@ section {
   float: right;
   border-radius: 2rem;
   width: 35%;
+}
+
+.project-timeline-container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-timeline{
+  width: 70%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: center;
+
+}
+
+.project-timeline ul li {
+
+  padding: 1.5rem;
+  background-color: rgba(24, 27, 37, 0.4);
+  border: 1px solid rgba(37, 40, 55, 0.5);
+  border-radius: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.project-timeline ul li:last-child{
+  margin-bottom: 0rem;
+}
+
+.timeline-content h2{
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 30px;
+  text-align:left;
+
+}
+
+.timeline-content p{
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 30px;
+  font-weight:300;
+
+}
+@media only screen and (min-width: 768px) {
+  /* .project-timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+  } */
+  .project-timeline ul li {
+    width: 70%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .project-timeline ul li:nth-child(odd){
+    float:left;
+    clear: right;
+  }
+
+  .project-timeline ul li:nth-child(even){
+    float:right;
+    clear: left;
+  }
 }
