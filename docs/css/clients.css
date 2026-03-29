@@ -46,3 +46,22 @@
     margin-right: auto;
     color: white;
 }
+
+.projects-grid {
+    margin: 7rem;
+    padding: 2rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: (0, 0, 0, 0.05);
+}
