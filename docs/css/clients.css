@@ -1,0 +1,48 @@
+.body {
+    font-family: "space-grotesk";
+}
+.hero-section {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url("../images/your-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.client-title {
+    font-size: 6rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+.client-title span {
+    color: #35c8ff;
+}
+.year-client-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.year-client-box {
+    width: calc(100% - 20rem);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    min-height: 175px;
+    border-color: #35c8ff;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}

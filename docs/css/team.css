@@ -82,8 +82,8 @@ img {
 }
 
 .site-max-width {
-    max-width: 1400px;
-    margin: auto;
+    width: min(1200px, calc(100% - 4rem));
+    margin: 0 auto;
 }
 
 .site-brand {
@@ -92,7 +92,6 @@ img {
 }
 
 .logo-box {
-    margin-left: 1rem;
     color: white;
     display: flex;
     width: 13rem;

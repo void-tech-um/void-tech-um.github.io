@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+.wordBlue{
+  color:#50CDF7;
+}
+
+.wordWhite{
+  color: #FFFFFF;
+}
+  
+body {
+  font-family: 'Space Grotesk';
+}
+
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
