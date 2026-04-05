@@ -603,11 +603,3 @@ section {
   border-radius: 2rem;
   width: 35%;
 }
-
-.nav-logo-img {
-  height: 40px;    /* Adjust this height to match your navbar thickness */
-  width: auto;     /* Keeps the aspect ratio perfect */
-  display: block;  /* Removes extra whitespace at the bottom */
-  vertical-align: middle;
-  padding-left: 2rem;
-}
