@@ -78,6 +78,7 @@
   right: 0;
   height: 0.25rem;
   background-color: var(--gray-light);
+  background-color: rgba(21, 35, 79, 0.95);
   z-index: 0;
 }
 
@@ -115,7 +116,8 @@
 /* 5. Active States */
 .step.active .dot {
   border-color: var(--brand-primary);
-  background-color: var(--brand-primary);
+  /* background-color: var(--brand-primary); */
+  background-color: rgba(11, 18, 40, 0.95);
   border: 2px solid #3792b143;
 }
 
@@ -132,6 +134,7 @@
 .step:hover .dot {
   transform: scale(1.2);
   border-color: var(--brand-primary);
+  /* background-color: ; */
 }
 /* 1. Position the dropdown container */
 .step {
@@ -142,7 +145,6 @@
 
 }
 
-/* 2. Style the dropdown box */
 .step .dropdown {
   display: none; /* Hide by default */
   position: absolute;
@@ -150,7 +152,7 @@
   left: 50%;
   transform: translateX(-55%); /* Centers the box */
   width: 250px;
-  background-color: #333;
+  background-color: linear-gradient(135deg, rgba(22, 29, 56, 0.95), rgba(13, 18, 39, 0.95));
   color: white;
   padding: 12px;
   border-radius: 8px;
@@ -169,13 +171,12 @@
   transform: translateX(-55%);
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-bottom: 6px solid #333;
+  border-bottom: 6px solid linear-gradient(135deg, rgba(22, 29, 56, 0.95), rgba(13, 18, 39, 0.95));/* The little arrow's color*/
 }
 
-/* 4. The Magic: Show on hover */
+/* SHOW ON hOVER */
 .step:hover .dropdown {
   display: block;
-  /* Optional: add a fade-in animation */
   animation: fadeIn 0.2s ease-in-out;
 }
 
@@ -244,11 +245,11 @@
   
   /* 3. Look & Feel */
   width: 220px;
-  background: #1e1e1e; /* Dark "code" theme */
+  /* background: #1e1e1e; Dark "code" theme */
   color: #efefef;
   padding: 15px;
   border-radius: 8px;
-  border: 1px solid #444;
+  /* border: 1px solid #444; */
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
   z-index: 100;
   transition: all 0.3s ease; /* Animate the slide-in */
@@ -599,76 +600,4 @@ section {
   float: right;
   border-radius: 2rem;
   width: 35%;
-}
-
-.project-timeline-container{
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-timeline{
-  width: 70%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-  position: center;
-
-}
-
-.project-timeline ul li {
-
-  padding: 1.5rem;
-  background-color: rgba(24, 27, 37, 0.4);
-  border: 1px solid rgba(37, 40, 55, 0.5);
-  border-radius: 1.25rem;
-  margin-bottom: 3rem;
-}
-
-.project-timeline ul li:last-child{
-  margin-bottom: 0rem;
-}
-
-.timeline-content h2{
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 30px;
-  text-align:left;
-
-}
-
-.timeline-content p{
-  font-size: 1.5rem;
-  text-align: left;
-  line-height: 30px;
-  font-weight:300;
-
-}
-@media only screen and (min-width: 768px) {
-  /* .project-timeline::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: gray;
-  } */
-  .project-timeline ul li {
-    width: 70%;
-    margin-bottom: 50px;
-    position: relative;
-  }
-
-  .project-timeline ul li:nth-child(odd){
-    float:left;
-    clear: right;
-  }
-
-  .project-timeline ul li:nth-child(even){
-    float:right;
-    clear: left;
-  }
 }

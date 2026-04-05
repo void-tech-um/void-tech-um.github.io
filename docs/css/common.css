@@ -11,7 +11,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: 1.8rem;
     background-color: #0C1830;
-    font-family: Raleway, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     cursor: var(--rocket-cursor)
 }      
 

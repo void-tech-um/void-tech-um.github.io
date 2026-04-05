@@ -6,8 +6,12 @@
 .wordWhite{
   color: #FFFFFF;
 }
-  
+
 body {
+  font-family: 'Space Grotesk';
+}
+
+span{
   font-family: 'Space Grotesk';
 }
 
