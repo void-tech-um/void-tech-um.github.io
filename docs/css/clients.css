@@ -1,67 +1,112 @@
-.body {
-    font-family: "space-grotesk";
-}
-.hero-section {
-    position: relative;
-    height: 700px;
-    width: 100%;
-    background:
-      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-      url("../images/your-image.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.client-title {
-    font-size: 6rem;
-    font-weight: 700;
-    color: white;
+body {
     margin: 0;
+    font-family: "Jost", sans-serif;
+    background: #030712;
+    color: white;
 }
+
+.clients-projects-section {
+    min-height: 100vh;
+    padding: 130px 24px 100px;
+    background:
+        radial-gradient(circle at top, rgba(0, 140, 255, 0.12), transparent 35%),
+        linear-gradient(180deg, #02040a 0%, #040816 100%);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.client-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    margin: 0 0 12px;
+    color: white;
+}
+
 .client-title span {
     color: #35c8ff;
 }
-.year-client-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-.year-client-box {
-    width: calc(100% - 20rem);
-    padding: 1.5rem;
-    border-radius: 1rem;
-    min-height: 175px;
-    border-color: #35c8ff;
-    border-width: 1px;
-    border-style: solid;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
+
+.section-subtitle {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1.05rem;
 }
 
 .projects-grid {
-    margin: 7rem;
-    padding: 2rem;
-    border-radius: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 0.1px;
-    border-color: (0, 0, 0, 0.05);
+    background: linear-gradient(180deg, rgba(11, 18, 40, 0.95), rgba(4, 10, 28, 0.98));
+    border: 1px solid rgba(70, 120, 255, 0.18);
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow:
+        0 0 0 1px rgba(53, 200, 255, 0.03),
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        inset 0 1px 30px rgba(53, 200, 255, 0.04);
+}
+
+.project-image {
+    height: 180px;
+    border-radius: 18px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.95rem;
+    background: linear-gradient(135deg, rgba(22, 29, 56, 0.95), rgba(13, 18, 39, 0.95));
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-client {
+    color: #35c8ff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.project-name {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.project-description {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.project-tech-stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #5ed8ff;
+    background: rgba(53, 200, 255, 0.12);
+    border: 1px solid rgba(53, 200, 255, 0.18);
+}
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
