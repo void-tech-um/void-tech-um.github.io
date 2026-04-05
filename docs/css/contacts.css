@@ -1,4 +1,5 @@
 .hero-sub {
+    font-family: 'Space Grotesk';
     text-align: center;
     color: #aaa;
     margin-top: 0.75rem;
@@ -128,6 +129,7 @@
 }
 
 .hero-section {
+    font-family: 'Space Grotesk';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,6 +137,7 @@
 }
 
 .hero-sub {
+    font-family: 'Space Grotesk';
     display: block;
     margin-top: 1rem;
 }
