@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>VOID Tech</title>
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" href="css/c&p.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/clients.css" />
+        <link rel="stylesheet" href="css/contacts.css" />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Forum|Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost"
+      rel="stylesheet"
+    />
+    <script
+      src="http://code.jquery.com/jquery-1.11.2.min.js"
+      type="text/javascript"
+    ></script>
+    <link rel="icon" type="image/png" src="images/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/black-hole.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/black-hole.png"
+    />
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <nav id="navbar" class="navbar">
+            <div class="flexy nav-flex">
+                <div class="logo-box">
+
+                    <div class="site-brand">
+                        <a href="index.html" class="wordBlue">VOID <span class="wordWhite">tech.</span></a>
+                    </div>
+                </div>
+                <ul class="flexy nav-links">
+                    <li class="nav-link">
+                        <a href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="clients&proj.html">Clients & Projects</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contacts.html" class="active">Contact Us</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="apply.html#student-roles">
+                        <button class="button">APPLY</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero-section">
+    <h1 class="client-title">Contact <span>Us</span></h1>
+    <p class="hero-sub">Have a project in mind? We'd love to hear from you.</p>
+</section>
+
+        <div class="contact-wrapper">
+    <div class="contact-info">
+        <div class="contact-card">
+            <div class="info-label">Location</div>
+            <div class="info-value">University Campus</div>
+            <div class="info-sub">Ann Arbor, Michigan 48104</div>
+        </div>
+        <div class="contact-card">
+            <div class="info-label">Email</div>
+            <div class="info-value">void.tech.umich@gmail.com</div>
+            <div class="info-sub">We reply within 48 hours</div>
+        </div>
+        <div class="contact-card">
+            <div class="info-label">Meetings</div>
+            <div class="info-value">Sunday, – 3:30pm – 5:30pm</div>
+            <div class="info-sub">Eastern Time</div>
+        </div>
+        <div class="contact-card">
+            <div class="info-label">Find us online</div>
+            <div class="socials-row">
+                <a class="social-chip" href="#">LinkedIn</a>
+                <a class="social-chip" href="#">GitHub</a>
+                <a class="social-chip" href="#">Instagram</a>
+                <a class="social-chip" href="#">Discord</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Jane"/>
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Smith"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="jane@example.com"/>
+        </div>
+        <div class="form-group">
+            <label for="subject">Topic</label>
+            <select id="subject">
+                <option value="">Select a topic...</option>
+                <option>New Project Inquiry</option>
+                <option>Partnership Opportunity</option>
+                <option>Joining the Team</option>
+                <option>General Question</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea id="msg" placeholder="Tell us about your project..."></textarea>
+        </div>
+        <button class="button" onclick="handleSubmit()">Send Message →</button>
+    </div>
+</div>
+
+    </body>
+</html>
