@@ -135,8 +135,11 @@
 }
 /* 1. Position the dropdown container */
 .step {
-  position: relative; /* Essential for absolute positioning of the child */
+  /* position: relative; /* Essential for absolute positioning of the child */
   cursor: pointer;
+  position: relative;
+  z-index: 2;
+
 }
 
 /* 2. Style the dropdown box */
@@ -186,6 +189,7 @@
     flex-direction: column; /* Stack steps vertically */
     align-items: center; /* Align dots to the left */
     padding-left: 0;
+
   }
 
   /* The Vertical Line - Centered */
@@ -201,10 +205,10 @@
   }
 
   .step {
-    flex-direction: row; /* Put dot and text side-by-side */
+    /* flex-direction: row; Put dot and text side-by-side */
     align-items: center;
-    margin-bottom: 40px; /* Space out the steps vertically */
-    width: 100%;
+    margin-bottom: 40px; /*Space out the steps vertically*/
+    /* width: 100%; */
   }
 
   .step .dot {
@@ -248,6 +252,7 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
   z-index: 100;
   transition: all 0.3s ease; /* Animate the slide-in */
+  /* font-size: 0.4rem; */
 }
 
 /* Show on Hover */
@@ -562,6 +567,7 @@ section {
   font-family: 'Space Grotesk';
   font-weight: 700;
   font-size: 36px;
+  /* letter-spacing: 0.25rem; */
   /* text-transform: uppercase; */
   margin-bottom: 3rem;
   text-align: center;
