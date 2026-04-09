@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 20rem;
     padding-bottom: 8rem;
     width: 100%;
 }
@@ -27,16 +27,77 @@ h3 {
     color: rgba(153, 153, 153, 1);
 
 }
-/* QUESTIONS BOX */
-.question-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+:root {
+  --bg-dark: rgba(24, 27, 37, 0.4);
+  --card-bg: #0d1117;
+  --text-white: #ffffff;
+  --text-gray: #999999;
+  --blue-accent: #58a6ff;
+  --border-color: rgba(37, 40, 55, 0.5);
 }
 
-.question-section{
-    
+
+.faq-container {
+  max-width: 700px;
+  /* max-height: 100px; */
+  margin: 0 auto;
+  padding-bottom: 20rem;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
+.faq-item {
+  background-color: var(--bg-dark);
+  border: 1px solid rgba(37, 40, 55, 0.5);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
 
+.faq-item:hover {
+  border-color: var(--text-gray);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--text-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* The Arrow Icon */
+.arrow::after {
+  content: '\2304'; /* Downward caret */
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.faq-item.active .arrow::after {
+  transform: rotate(180deg);
+}
+
+/* Hidden Answer Section */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  padding: 0 2rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 20rem; /* Adjust as needed */
+  padding-top:24px ;
+  padding-bottom: 24px;
+}

@@ -203,10 +203,67 @@ button[disabled]{
 #footer {
     padding: 3rem;
     height: 9rem;
-    color: #BFC3CD;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: rgba(153, 153, 153, 1);
     font-size: 1.5rem;
     margin: 0 auto;
-    background-color: #0C1830;
+
+    /* background-color: #0C1830; */
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  /* background-color: #0a0c10; */
+  padding: 40px 0;
+  width: 100%;
+}
+
+
+.social-icons {
+  display: flex ;
+  flex-direction: row ;
+  justify-content: center;
+  gap: 1rem;
+  width: auto; /* Ensure the container doesn't force a wrap */
+  margin-bottom: 2rem;
+}
+
+/* 3. The Individual Box */
+.icon-box {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(37, 40, 55, 0.5);
+  background-color: rgba(24, 27, 37, 0.4);
+  border-radius: 12px;
+  /* text-decoration: none; */
+  color: white;
+}
+
+/* 4. The Email Row */
+.footer-email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: small;
+  color: rgba(153, 153, 153, 1);
+  /* padding-bottom: px; */
+}
+.icon-box:hover {
+  background-color: #1a1c20;
+}
+
+#footer-email a {
+  color: #a0a0a0;
+  text-decoration: none;
 }
 
 #footer a {
@@ -224,6 +281,11 @@ margin: 0 auto;
 padding: 5rem;
 }
 
+.copyright{
+    font-weight: 200;
+    font-size: small;
+    color:rgba(153, 153, 153, 0.5);
+}
 @media screen and (max-width: 600px) {
     #footer {
         flex-direction: column-reverse;
