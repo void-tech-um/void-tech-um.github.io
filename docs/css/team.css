@@ -51,7 +51,7 @@
 .comeIn {
     animation-name: comeIn;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -82,8 +82,8 @@ img {
 }
 
 .site-max-width {
-    max-width: 1400px;
-    margin: auto;
+    width: min(1200px, calc(100% - 4rem));
+    margin: 0 auto;
 }
 
 .site-brand {
@@ -92,7 +92,6 @@ img {
 }
 
 .logo-box {
-    margin-left: 1rem;
     color: white;
     display: flex;
     width: 13rem;
@@ -139,8 +138,19 @@ img {
     padding-bottom: 0vh;
 }
 
+.blue{
+    color: #50CDF7;
+}
+
+.white{
+    color: #EAE8FF;
+}
+
 #site-name-animated {
+    font-family: 'Space Grotesk';
+    font-style: bold;
     font-size: 4rem;
+    font-weight: 500;
 }
 
 #site-name-animated.show span {
@@ -163,15 +173,14 @@ img {
 
 #site-name-animated span {
     transition: opacity .5s ease-out, transform .5s ease-out;
-    margin-right: 2.7rem;
+    margin-right: -1rem;
     display: inline-block;
     opacity: 0;
     transform: scale(1.9, 1.9);
-    color: #EAE8FF;
 }
 
 #site-name-animated.show .c5 {
-    margin-right: 7.5rem;
+    margin-right: 1rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -257,6 +266,11 @@ img {
 
 .eboard-image{
     border-radius: 3rem;
+}
+
+.subheading p{
+    color: #999999;
+    margin-top: -1rem;
 }
 
 .member-description{

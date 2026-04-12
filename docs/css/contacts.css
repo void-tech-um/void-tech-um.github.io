@@ -1,0 +1,153 @@
+.hero-sub {
+    font-family: 'Space Grotesk';
+    text-align: center;
+    color: #aaa;
+    margin-top: 0.75rem;
+    font-size: 2rem;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 2rem 6rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-card {
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: border-color 0.3s;
+}
+
+.contact-card:hover {
+    border-color: rgba(255,255,255,0.3);
+}
+
+.info-label {
+    font-size: 2rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: White;
+    margin-bottom: 0.35rem;
+}
+
+.info-value {
+    font-size: 1.5rem !important;
+    font-weight: 500;
+    color: #aaa 
+}
+
+.info-sub {
+    font-size: 1.25rem;
+    color: #aaa;
+    margin-top: 0.2rem;
+}
+
+.socials-row {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.social-chip {
+    padding: 0.4rem 0.85rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #aaa;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.social-chip:hover {
+    border-color: white;
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: White;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.7rem 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group select option {
+    background: #111;
+}
+
+.hero-section {
+    font-family: 'Space Grotesk';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-sub {
+    font-family: 'Space Grotesk';
+    display: block;
+    margin-top: 1rem;
+}
+
+.contact-card {
+    padding: 2rem;
+    min-height: 100px;
+}
+
+.info-value {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}

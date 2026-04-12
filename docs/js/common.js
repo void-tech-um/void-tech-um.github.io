@@ -6,6 +6,8 @@ function spinny() {
 function stopSpinny() {
   this.classList.remove("infinite");
 }
+
+/*
 particlesJS("particles-js", {
   particles: {
     number: { value: 500, density: { enable: true, value_area: 800 } },
@@ -60,6 +62,7 @@ particlesJS("particles-js", {
   },
   retina_detect: true
 });
+*/ 
 
 var update;
 update = function() {

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>VOID Tech</title>
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" href="css/c&p.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/clients.css" />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Forum|Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost"
+      rel="stylesheet"
+    />
+    <script
+      src="http://code.jquery.com/jquery-1.11.2.min.js"
+      type="text/javascript"
+    ></script>
+    <link rel="icon" type="image/png" src="images/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/black-hole.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/black-hole.png"
+    />
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <nav id="navbar" class="navbar">
+            <div class="flexy nav-flex">
+                <div class="logo-box">
+
+                    <div class="site-brand">
+                        <a href="index.html">
+                            <img src="icons/voidtechlogo.png" alt="VOID Tech Logo" class="nav-logo-img" />
+                        </a>
+                    </div>
+                </div>
+                <ul class="flexy nav-links">
+                    <li class="nav-link">
+                        <a href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="clients&proj.html" class="active">Clients & Projects</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contacts.html">Contact Us</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="apply.html#student-roles">
+                        <button class="button">APPLY</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="clients-projects-section">
+            <div class="section-header">
+                <h1 class="client-title">Clients & <span>Projects</span></h1>
+                <p class="section-subtitle">
+                Real work, real impact. Here's a sample of what we've delivered.
+                </p>
+            </div>
+
+            <section class="projects-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card" data-modal="modal-1">
+                    <div class="project-image">Project Screenshot</div>
+                    <div class="project-client">TechStart Inc.</div>
+                    <h3 class="project-name">E-Commerce Platform Redesign</h3>
+                    <p class="project-description">
+                        Rebuilt the entire storefront using React and a headless CMS,
+                        increasing conversion rates by 35%.
+                    </p>
+                    <div class="project-tech-stack-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Figma</span>
+                    </div>
+                </article>
+          
+                <!-- Modal for Project 1 -->
+                <div id="modal-1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>TechStart Inc.</h2>
+                        <h3>E-Commerce Platform Redesign</h3>
+                        <p>
+                        Rebuilt the entire storefront using React and a headless CMS,
+                        increasing conversion rates by 35%.
+                        </p>
+                        <p>Tech Stack: React, Node.js, Figma</p>
+                    </div>
+                </div>
+          
+                <!-- Project Card 2 -->
+                <article class="project-card" data-modal="modal-2">
+                    <div class="project-image">Project Screenshot</div>
+                    <div class="project-client">GreenLeaf Analytics</div>
+                    <h3 class="project-name">Data Dashboard</h3>
+                    <p class="project-description">
+                        Designed and developed a real-time analytics dashboard for tracking
+                        environmental sensor data across 200+ locations.
+                    </p>
+                    <div class="project-tech-stack-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </article>
+          
+                <!-- Modal for Project 2 -->
+                <div id="modal-2" class="modal">
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>GreenLeaf Analytics</h2>
+                    <h3>Data Dashboard</h3>
+                    <p>
+                        Designed and developed a real-time analytics dashboard for tracking
+                        environmental sensor data across 200+ locations.
+                    </p>
+                    <p>Tech Stack: Python, D3.js, PostgreSQL</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <article class="project-card" data-modal="modal-3">
+                    <div class="project-image">Project Screenshot</div>
+                    <div class="project-client">GreenLeaf Analytics</div>
+                    <h3 class="project-name">Data Dashboard</h3>
+                    <p class="project-description">
+                        Designed and developed a real-time analytics dashboard for tracking
+                        environmental sensor data across 200+ locations.
+                    </p>
+                    <div class="project-tech-stack-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </article>
+          
+                <!-- Modal for Project 3 -->
+                <div id="modal-3" class="modal">
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>GreenLeaf Analytics</h2>
+                    <h3>Data Dashboard</h3>
+                    <p>
+                        Designed and developed a real-time analytics dashboard for tracking
+                        environmental sensor data across 200+ locations.
+                    </p>
+                    <p>Tech Stack: Python, D3.js, PostgreSQL</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <article class="project-card" data-modal="modal-4">
+                    <div class="project-image">Project Screenshot</div>
+                    <div class="project-client">GreenLeaf Analytics</div>
+                    <h3 class="project-name">Data Dashboard</h3>
+                    <p class="project-description">
+                        Designed and developed a real-time analytics dashboard for tracking
+                        environmental sensor data across 200+ locations.
+                    </p>
+                    <div class="project-tech-stack-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </article>
+          
+                <!-- Modal for Project 4 -->
+                <div id="modal-4" class="modal">
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>GreenLeaf Analytics</h2>
+                    <h3>Data Dashboard</h3>
+                    <p>
+                        Designed and developed a real-time analytics dashboard for tracking
+                        environmental sensor data across 200+ locations.
+                    </p>
+                    <p>Tech Stack: Python, D3.js, PostgreSQL</p>
+                    </div>
+                </div>
+          
+              <!-- Add similar structure for other projects -->
+            </section>
+          </section>
+        <script src = "js/clients.js"></script>
+    </body>
+</html>

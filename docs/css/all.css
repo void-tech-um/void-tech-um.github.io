@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+.wordBlue{
+  color:#50CDF7;
+}
+
+.wordWhite{
+  color: #FFFFFF;
+}
+
+.nav-logo-img {
+  height: 40px;    /* Adjust this height to match your navbar thickness */
+  width: auto;     /* Keeps the aspect ratio perfect */
+  display: block;  /* Removes extra whitespace at the bottom */
+  padding-left: 2rem;
+}
+body {
+  font-family: 'Space Grotesk';
+}
+
+span{
+  font-family: 'Space Grotesk';
+}
+
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -16,6 +39,13 @@
   text-rendering: auto;
   line-height: 1; }
 
+/* First, hide the default Font Awesome icon */
+.fa-envelope {
+  content: url('../icons/email_logo.png');
+  /* Optional: Adjust the size if the image is too big */
+  display: inline-block;
+  vertical-align: middle;
+}
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
@@ -2241,8 +2271,12 @@ readers do not read off random characters that represent icons */
 .fa-info-circle:before {
   content: "\f05a"; }
 
-.fa-instagram:before {
-  content: "\f16d"; }
+.fa-instagram {
+  /* background-image: url('../icons/instagram_logo'); */
+  /* content: "\f16d";  */
+  content: url('../icons/instagram_logo.png');
+}
+  
 
 .fa-intercom:before {
   content: "\f7af"; }
@@ -2422,10 +2456,11 @@ readers do not read off random characters that represent icons */
   content: "\f0c1"; }
 
 .fa-linkedin:before {
-  content: "\f08c"; }
+  content: url('../icons/linkedIn_logo.png'); }
 
 .fa-linkedin-in:before {
-  content: "\f0e1"; }
+
+  content: url('../icons/linkedIn_logo.png'); }
 
 .fa-linode:before {
   content: "\f2b8"; }
